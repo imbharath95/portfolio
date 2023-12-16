@@ -54,7 +54,7 @@ function Head() {
                 </motion.div>
             </div>
             <motion.div className="sliding-text" variants= {scrolltextvariants} initial="initial" animate = "animate">
-                SLIDING TEXT
+            αρχή archí αρχή archí 
             </motion.div>
             <div className="image-container">
                 {/* <img src="./headImage.json" alt="" /> */}
