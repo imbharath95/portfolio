@@ -1,6 +1,6 @@
 import "./navbar.scss";
 import Sidebar from "../sidebar/Sidebar";
-import { motion } from "framer-motion";
+import { motion,useScroll } from "framer-motion";
 function Navbar() {
     return (
         <div className="navbar">
