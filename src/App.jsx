@@ -1,6 +1,5 @@
 import "./app.scss";
 import Navbar from "./components/navbar/Navbar";
-import Test from "./Test";
 import Head from "./components/head/Head";
 import Info from "./components/info/Info"
 const App = () => {
