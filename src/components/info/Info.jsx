@@ -2,7 +2,6 @@ import Lottie from "lottie-react";
 import webdevpic from "./webdevPic.json";
 import onlineShopping from "./onlineShoppingPic.json";
 import support from "./support.json";
-
 import "./info.scss";
 import { motion } from "framer-motion";
 const scrolltextvariants = {
@@ -20,7 +19,8 @@ const scrolltextvariants = {
 }
 const Test = () => {
     return (
-        <div className="info">
+        <div className="info" >
+            
             <motion.div className="heading">
                 WHAT WE DO ?
             </motion.div>
