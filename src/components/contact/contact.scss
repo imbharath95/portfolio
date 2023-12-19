@@ -1,0 +1,39 @@
+
+
+.contact {
+   background-color: whitesmoke;
+    height: 100vh;
+    display : grid;
+   grid-template-columns: auto auto;
+   grid-template-rows: 20% 80%;
+   
+   .heading {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-weight: bolder;
+   background-color: rgb(40, 38, 38);
+    color: rgb(234, 229, 229);
+   }
+  .subscribe {
+   text-align: center;
+    .lottie-subscribe{
+        width : 60vh;
+        margin: auto;
+    }
+    .advice {
+        padding-top : 20px;
+        font-size: large;
+    }
+    .input-field {
+        padding-top: 50px;
+
+        .txt {
+            height : 50px;
+        }
+    }
+  }
+
+  .details {
+    text-align: center;
+  }
+}
