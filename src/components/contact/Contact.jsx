@@ -4,6 +4,7 @@ import Lottie from "lottie-react";
 import subscribe from "././sunscribe.json";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+// import EmailForm from "../EmailForm/EmailForm";
 const Contact = () => {
 
     return (
@@ -21,6 +22,7 @@ const Contact = () => {
                     <h2 style={{color : "green"}}>Talk with advisor</h2><br />
                     <p>Enter your E-mail address<br />
                         We'll connect you with the right person.</p>
+                    
                 </div>
                 <div className="input-field">
                     <h4>Enter E-mail address*</h4><br />
@@ -36,6 +38,8 @@ const Contact = () => {
             </div>
             <div className="details">
                 add mobile number and email address
+                
+                {/* <EmailForm/> */}
             </div>
 
         </div>

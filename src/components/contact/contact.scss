@@ -11,7 +11,7 @@
     grid-column-start: 1;
     grid-column-end: 3;
     font-weight: bolder;
-   background-color: rgb(40, 38, 38);
+   background-color: black;
     color: rgb(234, 229, 229);
    }
   .subscribe {
@@ -28,12 +28,13 @@
         padding-top: 50px;
 
         .txt {
-            height : 50px;
+            height : 500px;
         }
     }
   }
 
   .details {
     text-align: center;
+    
   }
 }

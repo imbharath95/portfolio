@@ -6,6 +6,7 @@ html {
 section {
     height: 100vh;
     scroll-snap-align: center;
+   
 }
 
 * {
@@ -19,6 +20,39 @@ body {
     background-color: #0c0c1d;
     color: lightgray
 }
+/* Global Styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    /* Add other global styles here */
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  /* Styles for screens smaller than 600px (typical mobile phones) */
+  @media only screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+      /* Add other styles for small screens here */
+    }
+  }
+  
+  /* Styles for screens between 601px and 1024px (typical tablets) */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+      font-size: 16px;
+      /* Add other styles for medium screens here */
+    }
+  }
+  
+  /* Styles for screens larger than 1024px (typical laptops and desktops) */
+  @media only screen and (min-width: 1025px) {
+    body {
+      font-size: 18px;
+      /* Add other styles for large screens here */
+    }
+  }
+  
 
 a {
     text-decoration: none;
