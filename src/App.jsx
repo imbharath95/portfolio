@@ -4,14 +4,16 @@ import Head from "./components/head/Head";
 import Info from "./components/info/Info";
 import Contact from "./components/contact/Contact";
 const App = () => {
-  return <div>
+  return( <div>
+    <div><Navbar /></div>
+    
     <section id = "Home Page">
-      <Navbar />
+      
       <Head/>
       </section>
     <section id = "Services" ><Info /></section>
     <section id = "Contact Us"><Contact/></section>
-  </div>;
+  </div>);
 };
 
 export default App;

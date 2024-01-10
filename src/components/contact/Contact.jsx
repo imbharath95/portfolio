@@ -1,10 +1,10 @@
 import "./contact.scss";
 import Lottie from "lottie-react";
-import subscribe from "././animatedIcons/sunscribe.json";
+import Getintouch from "././animatedIcons/Getintouch.json";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import facebookAnimation from "././animatedIcons/facebookAnimation.json";
-import contactAnimation from "./animatedIcons/contactAnimation.json";
+import Animation from "./animatedIcons/Animation.json";
 import instaAnimation from "./animatedIcons/instaAnimation.json";
 import twitterAnimation from "./animatedIcons/TweetAnimation.json";
 
@@ -25,7 +25,9 @@ const Contact = () => {
           proven strategy with tactical instruction and guarantees results
         </p>
         <div className="lottie-subscribe">
-          <Lottie animationData={subscribe} />
+          <br/>
+          <Lottie animationData={Getintouch} />
+          <br/>
           <h2 style={{ color: "green" }}>Talk with advisor</h2>
           <br />
           <p>
@@ -35,6 +37,7 @@ const Contact = () => {
           </p>
         </div>
         <div className="input-field">
+          
           <h4>Enter E-mail address*</h4>
           <br />
           <TextField label="Subscribe*" id="outlined-size-small" size="small" />
@@ -51,18 +54,11 @@ const Contact = () => {
         </p>
         <div className="lottie-container">
           <Lottie
-            animationData={contactAnimation}
+            animationData={Animation}
             className="lottie-animation"
           />
         </div>
-        <div className="office-details">
-        <div className="vertical-line"></div>
-          <h3>Our Office</h3>
-          <p>New York</p>
-          <p>THE CHARLES NEW YORK</p>
-          <p>200 Broadway Suite 307</p>
-          <p>NY, NY 10038</p>
-          <div className="social-icons">
+        <div className="social-icons">
             <a href={facebookUrl} target="_blank" rel="noopener noreferrer">
               <div className="socialIcon">
                 <Lottie animationData={facebookAnimation} />
@@ -80,8 +76,15 @@ const Contact = () => {
           </a>
             
           </div>
+        <div className="office-details">
+        <div className="vertical-line"></div>
+          <h3>Our Office</h3>
+          <p>New York
+          THE CHARLES NEW YORK
+          200 Broadway Suite 307
+          NY, NY 10038</p>
+          
         </div>
-        
         </div>
 
       
