@@ -1,60 +1,57 @@
-
-
 .info {
-    background-color: whitesmoke;
-    display : grid;
-    height : 100vh;
-    grid-template-columns: auto auto;
+  background-color: whitesmoke;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: auto auto;
 }
 
 .heading {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    color: black;
-
-    background-color: black;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: black;
+  padding-top: 50px;
 }
 
 .e-cart {
-    .lottie-onlineshopping{
-        width : 25vh;
-        margin: auto;
-    }
-    .ecart-content {
-        text-align: center;
-    }
+  .lottie-onlineshopping {
+    width: 25vh;
+    margin: auto;
+  }
+  .ecart-content {
+    text-align: center;
+  }
 }
 
 .web-development {
-    .lottie-webdev{
-     width : 25vh;
-     margin: auto;
-    }
-    .web-content {
-        text-align: center;
-    }
- }
+  .lottie-webdev {
+    width: 25vh;
+    margin: auto;
+  }
+  .web-content {
+    text-align: center;
+  }
+}
 
 .customer-support {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    .lottie-support {
-        width : 25vh;
-        margin : auto;
-    }
-    .support-content {
-        text-align: center;
-    }
+  grid-column-start: 1;
+  grid-column-end: 3;
+  .lottie-support {
+    width: 25vh;
+    margin: auto;
+  }
+  .support-content {
+    text-align: center;
+  }
 }
 
 h4 {
-    color: green;
+  color: green;
 }
 
 p {
-    color: black;
+  color: black;
 }

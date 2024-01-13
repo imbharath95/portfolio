@@ -1,16 +1,16 @@
 import "./contact.scss";
 import Lottie from "lottie-react";
-import subscribe from "././animatedIcons/sunscribe.json";
+import Getintouch from "././animatedIcons/Getintouch.json";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import facebookAnimation from "././animatedIcons/facebookAnimation.json";
-import contactAnimation from "./animatedIcons/contactAnimation.json";
+import Animation from "./animatedIcons/Animation.json";
 import instaAnimation from "./animatedIcons/instaAnimation.json";
 import twitterAnimation from "./animatedIcons/TweetAnimation.json";
 
 const Contact = () => {
-  const facebookUrl = "https://www.facebook.com"; 
-  const instagramUrl = "https://www.instagram.com"; 
+  const facebookUrl = "https://www.facebook.com";
+  const instagramUrl = "https://www.instagram.com";
   const twitterUrl = "https://www.twitter.com";
   return (
     <div className="contact">
@@ -25,7 +25,8 @@ const Contact = () => {
           proven strategy with tactical instruction and guarantees results
         </p>
         <div className="lottie-subscribe">
-          <Lottie animationData={subscribe} />
+          <br />
+          <Lottie animationData={Getintouch} />
           <h2 style={{ color: "green" }}>Talk with advisor</h2>
           <br />
           <p>
@@ -50,44 +51,33 @@ const Contact = () => {
           please don&apos;t hesitate to contact us.
         </p>
         <div className="lottie-container">
-          <Lottie
-            animationData={contactAnimation}
-            className="lottie-animation"
-          />
+          <Lottie animationData={Animation} className="lottie-animation" />
         </div>
-        <div className="office-details">
-        <div className="vertical-line"></div>
-          <h3>Our Office</h3>
-          <p>New York</p>
-          <p>THE CHARLES NEW YORK</p>
-          <p>200 Broadway Suite 307</p>
-          <p>NY, NY 10038</p>
-          <div className="social-icons">
-            <a href={facebookUrl} target="_blank" rel="noopener noreferrer">
-              <div className="socialIcon">
-                <Lottie animationData={facebookAnimation} />
-              </div>
-            </a>
-            <a href={instagramUrl} target="_blank" rel="noopener noreferrer">
-              <div className="socialIcon">
-                <Lottie animationData={instaAnimation} />
-              </div>
-            </a>
-            <a href={twitterUrl} target="_blank" rel="noopener noreferrer">
+        <div className="social-icons">
+          <a href={facebookUrl} target="_blank" rel="noopener noreferrer">
+            <div className="socialIcon">
+              <Lottie animationData={facebookAnimation} />
+            </div>
+          </a>
+          <a href={instagramUrl} target="_blank" rel="noopener noreferrer">
+            <div className="socialIcon">
+              <Lottie animationData={instaAnimation} />
+            </div>
+          </a>
+          <a href={twitterUrl} target="_blank" rel="noopener noreferrer">
             <div className="socialIcon">
               <Lottie animationData={twitterAnimation} />
             </div>
           </a>
-            
-          </div>
         </div>
-        
+        <div className="office-details">
+          <div className="vertical-line"></div>
+          <h3>Our Office</h3>
+          <p>
+            New York THE CHARLES NEW YORK 200 Broadway Suite 307 NY, NY 10038
+          </p>
         </div>
-
-      
-      {/*<div className="details">
-                add mobile number and email address
-    </div>*/}
+      </div>
     </div>
   );
 };
