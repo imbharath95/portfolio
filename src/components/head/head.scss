@@ -3,6 +3,10 @@
     overflow : hidden;
     background: linear-gradient(180deg, #0c0c1d,#111132);
     position : relative;
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
+    
 
 .wrapper {
     max-width: 1366px;
@@ -17,6 +21,9 @@
     justify-content: center;
     font-weight: 300;
     gap: 40px;
+    z-index: 9999;
+    margin-left: 8%;
+    
     h2{
         font-size: 60px;
         color : rebeccapurple;
@@ -42,7 +49,7 @@
 }
 .image-container {
        position : absolute;
-       top : 0;
+       top : 80px;
        right:0;
        height: 100%;
        width : 50%;

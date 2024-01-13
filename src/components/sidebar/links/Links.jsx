@@ -38,7 +38,8 @@ function Links() {
                  whileTap={{scale:0.8}}>{item}</motion.a>
             ))
         }
-    </motion.div>);
+    </motion.div>
+    );
 }
 
 export default Links;
