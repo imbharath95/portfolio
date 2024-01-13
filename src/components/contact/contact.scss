@@ -1,31 +1,31 @@
-
-
 .contact {
-   background-color: whitesmoke;
-    height: 100vh;
-    display : grid;
-   grid-template-columns: auto auto;
-   grid-template-rows: 20% 80%;
-   
-   .heading {
-    grid-column-start: 1;
-    grid-column-end: 3;
+  background-color: whitesmoke;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto auto;
+
+  .heading {
+    grid-column: 1 / span 2;
     font-weight: bolder;
-   background-color: black;
+    background-color: rgb(40, 38, 38);
     color: rgb(234, 229, 229);
-   }
+  }
+
   .subscribe {
-   text-align: center;
-    .lottie-subscribe{
-        width : 60vh;
-        margin: auto;
+    text-align: center;
+
+    .lottie-subscribe {
+      width: 60vh;
+      margin: auto;
     }
+
     .advice {
-        padding-top : 20px;
-        font-size: large;
+      padding-top: 20px;
+      font-size: large;
     }
+
     .input-field {
-        padding-top: 50px;
+      padding-top: 50px;
 
         .txt {
             height : 500px;
@@ -34,7 +34,58 @@
   }
 
   .details {
-    text-align: center;
-    
+    padding: 20px;
+    font-weight: 900;
+
+    .office-details {
+      position: relative;
+      margin-left: 40px;
+      padding-left: 40px; 
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -20px;
+        height: 100%;
+        width: 2px;
+        background-color: #333;
+      }
+
+      h3 {
+        color: green;
+      }
+
+      p {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+    }
+
+    .lottie-container {
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+      position: relative;
+      bottom: 90px;
+    }
+
+    .lottie-animation {
+      width: 100%;
+      height: 100%;
+      margin-top: 25px;
+    }
+
+    .social-icons {
+      display: flex;
+      align-items: center;
+
+      .socialIcon {
+        margin-right: 10px;
+        width: 60px;
+        height: 30px;
+      }
+    }
   }
 }
