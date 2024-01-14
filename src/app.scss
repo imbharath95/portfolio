@@ -1,75 +1,32 @@
 html {
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 section {
-    height: 100vh;
-    scroll-snap-align: center;
-   
+  height: 100vh;
+  scroll-snap-align: center;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "DM Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
 }
 
 body {
-    background-color: #0c0c1d;
-    color: lightgray
+  background-color: #0c0c1d;
+  color: lightgray;
 }
 /* Global Styles */
 
 body {
-    font-family: 'Arial', sans-serif;
-    /* Add other global styles here */
-  }
-  
-  /* Media Queries for Responsive Design */
-  
-  /* Styles for screens smaller than 600px (typical mobile phones) */
-  @media only screen and (max-width: 600px) {
-    body {
-      font-size: 14px;
-      /* Add other styles for small screens here */
-    }
-  }
-  
-  /* Styles for screens between 601px and 1024px (typical tablets) */
-  @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    body {
-      font-size: 16px;
-      /* Add other styles for medium screens here */
-    }
-  }
-  
-  /* Styles for screens larger than 1024px (typical laptops and desktops) */
-  @media only screen and (min-width: 1025px) {
-    body {
-      font-size: 18px;
-      /* Add other styles for large screens here */
-    }
-  }
-  
+  font-family: "Arial", sans-serif;
+  /* Add other global styles here */
+}
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
-
-/*
-.trail {
-    height : 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .box {
-        width: 200px;
-        height: 200px;
-        background-color: whitesmoke;
-        }
-}
-*/

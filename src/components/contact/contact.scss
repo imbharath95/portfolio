@@ -6,9 +6,10 @@
 
   .heading {
     grid-column: 1 / span 2;
-    font-weight: bolder;
-    background-color: rgb(40, 38, 38);
-    color: rgb(234, 229, 229);
+    // font-weight: bolder;
+    // background-color: black;
+    // color: black;
+    padding-top: 50px;
   }
 
   .subscribe {
@@ -17,6 +18,7 @@
     .lottie-subscribe {
       width: 60vh;
       margin: auto;
+      padding-top: 30px;
     }
 
     .advice {
@@ -27,20 +29,21 @@
     .input-field {
       padding-top: 50px;
 
-        .txt {
-            height : 500px;
-        }
+      .txt {
+        height: 50px;
+      }
     }
   }
 
   .details {
     padding: 20px;
-    font-weight: 900;
+    font-weight: 430;
 
     .office-details {
       position: relative;
-      margin-left: 40px;
-      padding-left: 40px; 
+      margin-left: 10px;
+      padding-left: 10px;
+      padding-top: 10px;
 
       &:before {
         content: "";
@@ -57,8 +60,8 @@
       }
 
       p {
-        font-size: 16px;
-        color: #333;
+        font-size: large;
+        color: black;
         margin-bottom: 10px;
       }
     }
@@ -69,22 +72,25 @@
       overflow: hidden;
       position: relative;
       bottom: 90px;
+      margin-left: 30%;
     }
 
     .lottie-animation {
       width: 100%;
       height: 100%;
-      margin-top: 25px;
+      margin-top: 50px;
     }
 
     .social-icons {
       display: flex;
       align-items: center;
+      margin-left: 40%;
 
       .socialIcon {
         margin-right: 10px;
         width: 60px;
-        height: 30px;
+        height: 20px;
+        padding-bottom: 40px;
       }
     }
   }
