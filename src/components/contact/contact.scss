@@ -95,3 +95,17 @@
     }
   }
 }
+.emailForm {
+  // padding-top: 15px;
+  input {
+    width: 36%;
+    height: 40px;
+  }
+
+  button {
+    background-color: green;
+    width: 90px;
+    height: 40px;
+    border-radius: 6px;
+  }
+}
