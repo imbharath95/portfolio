@@ -45,7 +45,7 @@ const Test = () => {
         <div className="ecart-content">
           <h4>E-COMMERCE WEBSITE</h4>
           <p>
-            Shop effortlessly with us!
+             Shop effortlessly with us!
             <br />
             Explore a curated selection of products,
             <br />
