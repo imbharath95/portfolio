@@ -40,6 +40,14 @@ const scrolltextvariants = {
 };
 
 function Head() {
+  const handleClick = () => {
+    const contactSection = document.getElementById("Contact Us");
+    if (contactSection) {
+      contactSection.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <div className="head">
       <div className="wrapper">
@@ -57,7 +65,9 @@ function Head() {
             <motion.button variants={textVariants}>
               Check our website
             </motion.button>
-            <motion.button variants={textVariants}>About Us</motion.button>
+            <motion.button variants={textVariants} onClick={handleClick}>
+              About Us
+            </motion.button>
           </motion.div>
           <motion.img
             src="/scroll.png"

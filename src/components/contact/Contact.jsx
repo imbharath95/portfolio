@@ -1,17 +1,48 @@
 import "./contact.scss";
 import Lottie from "lottie-react";
-import Getintouch from "././animatedIcons/Getintouch.json";
+import Getintouch from "././animatedIcons/sunscribe.json";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import facebookAnimation from "././animatedIcons/facebookAnimation.json";
 import Animation from "./animatedIcons/Animation.json";
 import instaAnimation from "./animatedIcons/instaAnimation.json";
 import twitterAnimation from "./animatedIcons/TweetAnimation.json";
-
+import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 const Contact = () => {
   const facebookUrl = "https://www.facebook.com";
   const instagramUrl = "https://www.instagram.com";
   const twitterUrl = "https://www.twitter.com";
+  const [email, setEmail] = useState("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (email.trim() !== "") {
+      const serviceId = "service_ptuy9py";
+      const templateId = "template_v5voa8y";
+      const publicKey = "_nH6q8rKqv-sf4AqF";
+
+      // Create a new object that contains dynamic template params
+      const templateParams = {
+        from_email: email,
+        to_name: "Clothing Shop",
+      };
+
+      // Send the email using EmailJS
+      emailjs
+        .send(serviceId, templateId, templateParams, publicKey)
+        .then((response) => {
+          console.log("Email sent successfully!", response);
+
+          setEmail("");
+        })
+        .catch((error) => {
+          console.error("Error sending email:", error);
+        });
+    } else {
+      console.error("Email is required");
+    }
+  };
+
   return (
     <div className="contact">
       <div className="heading">
@@ -25,7 +56,7 @@ const Contact = () => {
           proven strategy with tactical instruction and guarantees results
         </p>
         <div className="lottie-subscribe">
-          <br />
+          {/* <br /> */}
           <Lottie animationData={Getintouch} />
           <h2 style={{ color: "green" }}>Talk with advisor</h2>
           <br />
@@ -38,10 +69,24 @@ const Contact = () => {
         <div className="input-field">
           <h4>Enter E-mail address*</h4>
           <br />
-          <TextField label="Subscribe*" id="outlined-size-small" size="small" />
-          <Button variant="contained" color="success" size="medium">
-            SUBMIT
-          </Button>
+          <form onSubmit={handleSubmit}>
+            <TextField
+              label="Subscribe*"
+              id="outlined-size-small"
+              size="small"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <Button
+              type="submit"
+              variant="contained"
+              color="success"
+              size="medium"
+            >
+              SUBMIT
+            </Button>
+          </form>
         </div>
       </div>
       <div className="details">
@@ -53,30 +98,32 @@ const Contact = () => {
         <div className="lottie-container">
           <Lottie animationData={Animation} className="lottie-animation" />
         </div>
-        <div className="social-icons">
-          <a href={facebookUrl} target="_blank" rel="noopener noreferrer">
-            <div className="socialIcon">
-              <Lottie animationData={facebookAnimation} />
-            </div>
-          </a>
-          <a href={instagramUrl} target="_blank" rel="noopener noreferrer">
-            <div className="socialIcon">
-              <Lottie animationData={instaAnimation} />
-            </div>
-          </a>
-          <a href={twitterUrl} target="_blank" rel="noopener noreferrer">
-            <div className="socialIcon">
-              <Lottie animationData={twitterAnimation} />
-            </div>
-          </a>
+        <div className="social">
+          <div className="social-icons">
+            <a href={facebookUrl} target="_blank" rel="noopener noreferrer">
+              <div className="socialIcon">
+                <Lottie animationData={facebookAnimation} />
+              </div>
+            </a>
+            <a href={instagramUrl} target="_blank" rel="noopener noreferrer">
+              <div className="socialIcon">
+                <Lottie animationData={instaAnimation} />
+              </div>
+            </a>
+            <a href={twitterUrl} target="_blank" rel="noopener noreferrer">
+              <div className="socialIcon">
+                <Lottie animationData={twitterAnimation} />
+              </div>
+            </a>
+          </div>
+          <div className="office-details">
+            <h3>Our Office</h3>
+            <p>
+              New York,THE CHARLES NEW YORK, 200 Broadway Suite 307 NY, NY 10038
+            </p>
+          </div>
         </div>
-        <div className="office-details">
-          <div className="vertical-line"></div>
-          <h3>Our Office</h3>
-          <p>
-            New York THE CHARLES NEW YORK 200 Broadway Suite 307 NY, NY 10038
-          </p>
-        </div>
+        <br/><footer>@2024 Clothing Shop. All rights reserved.</footer>
       </div>
     </div>
   );
