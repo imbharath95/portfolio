@@ -40,6 +40,8 @@
         color: whitesmoke;
         margin-right: 20px;
         cursor: pointer;
+        position: relative;
+        z-index: 1;
       }
     }
     img {
